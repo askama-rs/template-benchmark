@@ -72,6 +72,8 @@ impl TryFrom<String> for Case {
 const TMPLS: &[(&str, fn(Case) -> Result<(), Error>)] = &[
     #[cfg(feature = "askama")]
     ("askama", tmpl::<askama::Benchmark>),
+    #[cfg(feature = "askama_git")]
+    ("askama_git", tmpl::<askama_git::Benchmark>),
     #[cfg(feature = "handlebars")]
     ("handlebars", tmpl::<handlebars::Benchmark>),
     #[cfg(feature = "horrorshow")]
@@ -84,8 +86,6 @@ const TMPLS: &[(&str, fn(Case) -> Result<(), Error>)] = &[
     ("minijinja", tmpl::<minijinja::Benchmark>),
     #[cfg(feature = "rinja")]
     ("rinja", tmpl::<rinja::Benchmark>),
-    #[cfg(feature = "rinja_git")]
-    ("rinja_git", tmpl::<rinja_git::Benchmark>),
     #[cfg(feature = "ructe")]
     ("ructe", tmpl::<ructe::Benchmark>),
     #[cfg(feature = "sailfish")]

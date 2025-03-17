@@ -34,9 +34,9 @@ Please see also [*Rust web framework comparison*].
 The benchmarking was done on Github's action runners, on an AMD-64 Linux system.
 The absolute performance can vary, but the relative performance of crate *X* to *Y* should be stable.
 
-[![](https://rinja-rs.github.io/template-benchmark/results.svg)](https://rinja-rs.github.io/template-benchmark/)
+[![](https://askama-rs.github.io/template-benchmark/results.svg)](https://askama-rs.github.io/template-benchmark/)
 
-More information can be found in: <https://rinja-rs.github.io/template-benchmark/>.
+More information can be found in: <https://askama-rs.github.io/template-benchmark/>.
 
 The "big table" benchmark generates a 100×100 cell HTML table.
 The "teams" benchmark contains a list of four sport teams and their scores.
@@ -99,49 +99,49 @@ Run `./generate-table.py` to generate the table you see above.
 [dl-tera]: <https://img.shields.io/crates/dr/tera?label=&color=f8f8f8&style=flat-square>
 [dl-tinytemplate]: <https://img.shields.io/crates/dr/tinytemplate?label=&color=f8f8f8&style=flat-square>
 
-[stars-askama]: <https://img.shields.io/github/stars/djc/askama?label=&color=f8f8f8&style=flat-square>
+[stars-askama]: <https://img.shields.io/github/stars/askama-rs/askama-old?label=&color=f8f8f8&style=flat-square>
 [stars-handlebars]: <https://img.shields.io/github/stars/sunng87/handlebars-rust?label=&color=f8f8f8&style=flat-square>
 [stars-horrorshow]: <https://img.shields.io/github/stars/Stebalien/horrorshow-rs?label=&color=f8f8f8&style=flat-square>
 [stars-markup]: <https://img.shields.io/github/stars/utkarshkukreti/markup.rs?label=&color=f8f8f8&style=flat-square>
 [stars-maud]: <https://img.shields.io/github/stars/lambda-fairy/maud?label=&color=f8f8f8&style=flat-square>
 [stars-minijinja]: <https://img.shields.io/github/stars/mitsuhiko/minijinja?label=&color=f8f8f8&style=flat-square>
-[stars-rinja]: <https://img.shields.io/github/stars/rinja-rs/rinja?label=&color=f8f8f8&style=flat-square>
+[stars-rinja]: <https://img.shields.io/github/stars/askama-rs/askama?label=&color=f8f8f8&style=flat-square>
 [stars-ructe]: <https://img.shields.io/github/stars/kaj/ructe?label=&color=f8f8f8&style=flat-square>
 [stars-sailfish]: <https://img.shields.io/github/stars/rust-sailfish/sailfish?label=&color=f8f8f8&style=flat-square>
 [stars-tera]: <https://img.shields.io/github/stars/Keats/tera?label=&color=f8f8f8&style=flat-square>
 [stars-tinytemplate]: <https://img.shields.io/github/stars/bheisler/TinyTemplate?label=&color=f8f8f8&style=flat-square>
 
-[contr-askama]: <https://img.shields.io/github/contributors/djc/askama?label=&color=f8f8f8&style=flat-square>
+[contr-askama]: <https://img.shields.io/github/contributors/askama-rs/askama-old?label=&color=f8f8f8&style=flat-square>
 [contr-handlebars]: <https://img.shields.io/github/contributors/sunng87/handlebars-rust?label=&color=f8f8f8&style=flat-square>
 [contr-horrorshow]: <https://img.shields.io/github/contributors/Stebalien/horrorshow-rs?label=&color=f8f8f8&style=flat-square>
 [contr-markup]: <https://img.shields.io/github/contributors/utkarshkukreti/markup.rs?label=&color=f8f8f8&style=flat-square>
 [contr-maud]: <https://img.shields.io/github/contributors/lambda-fairy/maud?label=&color=f8f8f8&style=flat-square>
 [contr-minijinja]: <https://img.shields.io/github/contributors/mitsuhiko/minijinja?label=&color=f8f8f8&style=flat-square>
-[contr-rinja]: <https://img.shields.io/github/contributors/rinja-rs/rinja?label=&color=f8f8f8&style=flat-square>
+[contr-rinja]: <https://img.shields.io/github/contributors/askama-rs/askama?label=&color=f8f8f8&style=flat-square>
 [contr-ructe]: <https://img.shields.io/github/contributors/kaj/ructe?label=&color=f8f8f8&style=flat-square>
 [contr-sailfish]: <https://img.shields.io/github/contributors/rust-sailfish/sailfish?label=&color=f8f8f8&style=flat-square>
 [contr-tera]: <https://img.shields.io/github/contributors/Keats/tera?label=&color=f8f8f8&style=flat-square>
 [contr-tinytemplate]: <https://img.shields.io/github/contributors/bheisler/TinyTemplate?label=&color=f8f8f8&style=flat-square>
 
-[act-askama]: <https://img.shields.io/github/commit-activity/y/djc/askama?label=&color=f8f8f8&style=flat-square>
+[act-askama]: <https://img.shields.io/github/commit-activity/y/askama-rs/askama-old?label=&color=f8f8f8&style=flat-square>
 [act-handlebars]: <https://img.shields.io/github/commit-activity/y/sunng87/handlebars-rust?label=&color=f8f8f8&style=flat-square>
 [act-horrorshow]: <https://img.shields.io/github/commit-activity/y/Stebalien/horrorshow-rs?label=&color=f8f8f8&style=flat-square>
 [act-markup]: <https://img.shields.io/github/commit-activity/y/utkarshkukreti/markup.rs?label=&color=f8f8f8&style=flat-square>
 [act-maud]: <https://img.shields.io/github/commit-activity/y/lambda-fairy/maud?label=&color=f8f8f8&style=flat-square>
 [act-minijinja]: <https://img.shields.io/github/commit-activity/y/mitsuhiko/minijinja?label=&color=f8f8f8&style=flat-square>
-[act-rinja]: <https://img.shields.io/github/commit-activity/y/rinja-rs/rinja?label=&color=f8f8f8&style=flat-square>
+[act-rinja]: <https://img.shields.io/github/commit-activity/y/askama-rs/askama?label=&color=f8f8f8&style=flat-square>
 [act-ructe]: <https://img.shields.io/github/commit-activity/y/kaj/ructe?label=&color=f8f8f8&style=flat-square>
 [act-sailfish]: <https://img.shields.io/github/commit-activity/y/rust-sailfish/sailfish?label=&color=f8f8f8&style=flat-square>
 [act-tera]: <https://img.shields.io/github/commit-activity/y/Keats/tera?label=&color=f8f8f8&style=flat-square>
 [act-tinytemplate]: <https://img.shields.io/github/commit-activity/y/bheisler/TinyTemplate?label=&color=f8f8f8&style=flat-square>
 
-[repo-askama]: <https://github.com/djc/askama>
+[repo-askama]: <https://github.com/askama-rs/askama-old>
 [repo-handlebars]: <https://github.com/sunng87/handlebars-rust>
 [repo-horrorshow]: <https://github.com/Stebalien/horrorshow-rs>
 [repo-markup]: <https://github.com/utkarshkukreti/markup.rs>
 [repo-maud]: <https://github.com/lambda-fairy/maud>
 [repo-minijinja]: <https://github.com/mitsuhiko/minijinja>
-[repo-rinja]: <https://github.com/rinja-rs/rinja>
+[repo-rinja]: <https://github.com/askama-rs/askama>
 [repo-ructe]: <https://github.com/kaj/ructe>
 [repo-sailfish]: <https://github.com/rust-sailfish/sailfish>
 [repo-tera]: <https://github.com/Keats/tera>
