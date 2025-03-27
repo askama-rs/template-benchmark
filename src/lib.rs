@@ -39,8 +39,6 @@ macro_rules! for_each {
             for_each!(markup, group, $input:$Input, $func);
             #[cfg(feature = "maud")]
             for_each!(maud, group, $input:$Input, $func);
-            #[cfg(feature = "rinja")]
-            for_each!(rinja, group, $input:$Input, $func);
             #[cfg(feature = "ructe")]
             for_each!(ructe, group, $input:$Input, $func);
             #[cfg(feature = "sailfish")]

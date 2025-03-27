@@ -84,8 +84,6 @@ const TMPLS: &[(&str, fn(Case) -> Result<(), Error>)] = &[
     ("maud", tmpl::<maud::Benchmark>),
     #[cfg(feature = "minijinja")]
     ("minijinja", tmpl::<minijinja::Benchmark>),
-    #[cfg(feature = "rinja")]
-    ("rinja", tmpl::<rinja::Benchmark>),
     #[cfg(feature = "ructe")]
     ("ructe", tmpl::<ructe::Benchmark>),
     #[cfg(feature = "sailfish")]

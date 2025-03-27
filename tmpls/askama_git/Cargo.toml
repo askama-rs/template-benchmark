@@ -8,4 +8,4 @@ license = "Apache-2.0"
 [dependencies]
 tmpls = { version = "*", path = ".." }
 
-askama = { version = "0.3", git = "https://github.com/askama-rs/askama", branch = "master" }
+askama = { version = "*", git = "https://github.com/askama-rs/askama", branch = "master" }
