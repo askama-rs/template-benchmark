@@ -35,6 +35,8 @@ macro_rules! for_each {
             for_each!(askama_git, group, $input:$Input, $func);
             #[cfg(feature = "horrorshow")]
             for_each!(horrorshow, group, $input:$Input, $func);
+            #[cfg(feature = "hypertext")]
+            for_each!(hypertext, group, $input:$Input, $func);
             #[cfg(feature = "markup")]
             for_each!(markup, group, $input:$Input, $func);
             #[cfg(feature = "maud")]
@@ -43,6 +45,8 @@ macro_rules! for_each {
             for_each!(ructe, group, $input:$Input, $func);
             #[cfg(feature = "sailfish")]
             for_each!(sailfish, group, $input:$Input, $func);
+            #[cfg(feature = "vy")]
+            for_each!(vy, group, $input:$Input, $func);
 
             group.finish();
         };

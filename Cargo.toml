@@ -24,13 +24,14 @@ license = "Apache-2.0"
 [features]
 default = ["compiled", "interpreted"]
 
-compiled = ["askama", "askama_git", "horrorshow", "markup", "maud", "ructe", "sailfish"]
+compiled = ["askama", "askama_git", "horrorshow", "hypertext", "markup", "maud", "ructe", "sailfish", "vy"]
 interpreted = ["handlebars", "minijinja", "tera", "tinytemplate"]
 
 askama = ["dep:askama", "_contains_compiled"]
 askama_git = ["dep:askama_git", "_contains_compiled"]
 handlebars = ["dep:handlebars", "_contains_interpreted"]
 horrorshow = ["dep:horrorshow", "_contains_compiled"]
+hypertext = ["dep:hypertext", "_contains_compiled"]
 markup = ["dep:markup", "_contains_compiled"]
 maud = ["dep:maud", "_contains_compiled"]
 minijinja = ["dep:minijinja", "_contains_interpreted"]
@@ -38,6 +39,7 @@ ructe = ["dep:ructe", "_contains_compiled"]
 sailfish = ["dep:sailfish", "_contains_compiled"]
 tera = ["dep:tera", "_contains_interpreted"]
 tinytemplate = ["dep:tinytemplate", "_contains_interpreted"]
+vy = ["dep:vy", "_contains_compiled"]
 
 _contains_compiled = []
 _contains_interpreted = []
@@ -49,6 +51,7 @@ askama = { version = "*", optional = true, path = "tmpls/askama", package = "tmp
 askama_git = { version = "*", optional = true, path = "tmpls/askama_git", package = "tmpl-askama_git" }
 handlebars = { version = "*", optional = true, path = "tmpls/handlebars", package = "tmpl-handlebars" }
 horrorshow = { version = "*", optional = true, path = "tmpls/horrorshow", package = "tmpl-horrorshow" }
+hypertext = { version = "*", optional = true, path = "tmpls/hypertext", package = "tmpl-hypertext" }
 markup = { version = "*", optional = true, path = "tmpls/markup", package = "tmpl-markup" }
 maud = { version = "*", optional = true, path = "tmpls/maud", package = "tmpl-maud" }
 minijinja = { version = "*", optional = true, path = "tmpls/minijinja", package = "tmpl-minijinja" }
@@ -56,6 +59,7 @@ ructe = { version = "*", optional = true, path = "tmpls/ructe", package = "tmpl-
 sailfish = { version = "*", optional = true, path = "tmpls/sailfish", package = "tmpl-sailfish" }
 tera = { version = "*", optional = true, path = "tmpls/tera", package = "tmpl-tera" }
 tinytemplate = { version = "*", optional = true, path = "tmpls/tinytemplate", package = "tmpl-tinytemplate" }
+vy = { version = "*", optional = true, path = "tmpls/vy", package = "tmpl-vy" }
 
 ahash = { version = "0.8.11", features = ["no-rng"] }
 criterion = { version = "0.5.1", features = ["html_reports"] }

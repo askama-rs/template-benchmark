@@ -78,6 +78,8 @@ const TMPLS: &[(&str, fn(Case) -> Result<(), Error>)] = &[
     ("handlebars", tmpl::<handlebars::Benchmark>),
     #[cfg(feature = "horrorshow")]
     ("horrorshow", tmpl::<horrorshow::Benchmark>),
+    #[cfg(feature = "hypertext")]
+    ("hypertext", tmpl::<hypertext::Benchmark>),
     #[cfg(feature = "markup")]
     ("markup", tmpl::<markup::Benchmark>),
     #[cfg(feature = "maud")]
@@ -92,6 +94,8 @@ const TMPLS: &[(&str, fn(Case) -> Result<(), Error>)] = &[
     ("tera", tmpl::<tera::Benchmark>),
     #[cfg(feature = "tinytemplate")]
     ("tinytemplate", tmpl::<tinytemplate::Benchmark>),
+    #[cfg(feature = "vy")]
+    ("vy", tmpl::<vy::Benchmark>),
 ];
 
 struct Tmpls(usize);
