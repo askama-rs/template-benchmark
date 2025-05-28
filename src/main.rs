@@ -74,6 +74,8 @@ const TMPLS: &[(&str, fn(Case) -> Result<(), Error>)] = &[
     ("askama", tmpl::<askama::Benchmark>),
     #[cfg(feature = "askama_git")]
     ("askama_git", tmpl::<askama_git::Benchmark>),
+    #[cfg(feature = "dioxus")]
+    ("dioxus", tmpl::<dioxus::Benchmark>),
     #[cfg(feature = "handlebars")]
     ("handlebars", tmpl::<handlebars::Benchmark>),
     #[cfg(feature = "horrorshow")]

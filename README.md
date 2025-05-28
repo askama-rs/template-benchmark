@@ -16,6 +16,7 @@ All of them are well maintained, mature and perform HTML escaping automatically.
 | Crate          | Docs                                            | Repo                               | Code         | Recent<br>Downloads                  | Github<br>Stars                              | Contrib-<br>utors                            | Recent<br>Commits                          |
 | -------------- | ----------------------------------------------- | ---------------------------------- | -------------| ------------------------------------ | -------------------------------------------- | -------------------------------------------- | ------------------------------------------ |
 | [askama]       | [![][docs-img-askama]][docs-askama]             | [![][img-repo]][repo-askama]       | pre-compiled | [![][dl-askama]][askama]             | [![][stars-askama]][repo-askama]             | [![][contr-askama]][repo-askama]             | [![][act-askama]][repo-askama]             |
+| [dioxus]       | [![][docs-img-dioxus]][docs-dioxus]             | [![][img-repo]][repo-dioxus]       | interpreted  | [![][dl-dioxus]][dioxus]             | [![][stars-dioxus]][repo-dioxus]             | [![][contr-dioxus]][repo-dioxus]             | [![][act-dioxus]][repo-dioxus]             |
 | [handlebars]   | [![][docs-img-handlebars]][docs-handlebars]     | [![][img-repo]][repo-handlebars]   | interpreted  | [![][dl-handlebars]][handlebars]     | [![][stars-handlebars]][repo-handlebars]     | [![][contr-handlebars]][repo-handlebars]     | [![][act-handlebars]][repo-handlebars]     |
 | [horrorshow]   | [![][docs-img-horrorshow]][docs-horrorshow]     | [![][img-repo]][repo-horrorshow]   | pre-compiled | [![][dl-horrorshow]][horrorshow]     | [![][stars-horrorshow]][repo-horrorshow]     | [![][contr-horrorshow]][repo-horrorshow]     | [![][act-horrorshow]][repo-horrorshow]     |
 | [hypertext]    | [![][docs-img-hypertext]][docs-hypertext]       | [![][img-repo]][repo-hypertext]    | pre-compiled | [![][dl-hypertext]][hypertext]       | [![][stars-hypertext]][repo-hypertext]       | [![][contr-hypertext]][repo-hypertext]       | [![][act-hypertext]][repo-hypertext]       |
@@ -54,6 +55,7 @@ Run `./generate-table.py` to generate the table you see above.
 [img-repo]: <https://img.shields.io/badge/-repo-f8f8f8?style=flat-square&logo=github&logoColor=black>
 
 [askama]: <https://crates.io/crates/askama/>
+[dioxus]: <https://crates.io/crates/dioxus/>
 [handlebars]: <https://crates.io/crates/handlebars/>
 [horrorshow]: <https://crates.io/crates/horrorshow/>
 [hypertext]: <https://crates.io/crates/hypertext/>
@@ -68,6 +70,7 @@ Run `./generate-table.py` to generate the table you see above.
 [yew]: <https://crates.io/crates/yew/>
 
 [docs-askama]: <https://docs.rs/askama/latest/askama>
+[docs-dioxus]: <https://docs.rs/dioxus/latest/dioxus>
 [docs-handlebars]: <https://docs.rs/handlebars/latest/handlebars>
 [docs-horrorshow]: <https://docs.rs/horrorshow/latest/horrorshow>
 [docs-hypertext]: <https://docs.rs/hypertext/latest/hypertext>
@@ -82,6 +85,7 @@ Run `./generate-table.py` to generate the table you see above.
 [docs-yew]: <https://docs.rs/yew/latest/yew>
 
 [docs-img-askama]: <https://img.shields.io/docsrs/askama?label=&style=flat-square>
+[docs-img-dioxus]: <https://img.shields.io/docsrs/dioxus?label=&style=flat-square>
 [docs-img-handlebars]: <https://img.shields.io/docsrs/handlebars?label=&style=flat-square>
 [docs-img-horrorshow]: <https://img.shields.io/docsrs/horrorshow?label=&style=flat-square>
 [docs-img-hypertext]: <https://img.shields.io/docsrs/hypertext?label=&style=flat-square>
@@ -96,6 +100,7 @@ Run `./generate-table.py` to generate the table you see above.
 [docs-img-yew]: <https://img.shields.io/docsrs/yew?label=&style=flat-square>
 
 [dl-askama]: <https://img.shields.io/crates/dr/askama?label=&color=f8f8f8&style=flat-square>
+[dl-dioxus]: <https://img.shields.io/crates/dr/dioxus?label=&color=f8f8f8&style=flat-square>
 [dl-handlebars]: <https://img.shields.io/crates/dr/handlebars?label=&color=f8f8f8&style=flat-square>
 [dl-horrorshow]: <https://img.shields.io/crates/dr/horrorshow?label=&color=f8f8f8&style=flat-square>
 [dl-hypertext]: <https://img.shields.io/crates/dr/hypertext?label=&color=f8f8f8&style=flat-square>
@@ -110,6 +115,7 @@ Run `./generate-table.py` to generate the table you see above.
 [dl-yew]: <https://img.shields.io/crates/dr/yew?label=&color=f8f8f8&style=flat-square>
 
 [stars-askama]: <https://img.shields.io/github/stars/askama-rs/askama?label=&color=f8f8f8&style=flat-square>
+[stars-dioxus]: <https://img.shields.io/github/stars/DioxusLabs/dioxus?label=&color=f8f8f8&style=flat-square>
 [stars-handlebars]: <https://img.shields.io/github/stars/sunng87/handlebars-rust?label=&color=f8f8f8&style=flat-square>
 [stars-horrorshow]: <https://img.shields.io/github/stars/Stebalien/horrorshow-rs?label=&color=f8f8f8&style=flat-square>
 [stars-hypertext]: <https://img.shields.io/github/stars/vidhanio/hypertext?label=&color=f8f8f8&style=flat-square>
@@ -124,6 +130,7 @@ Run `./generate-table.py` to generate the table you see above.
 [stars-yew]: <https://img.shields.io/github/stars/yewstack/yew?label=&color=f8f8f8&style=flat-square>
 
 [contr-askama]: <https://img.shields.io/github/contributors/askama-rs/askama?label=&color=f8f8f8&style=flat-square>
+[contr-dioxus]: <https://img.shields.io/github/contributors/DioxusLabs/dioxus?label=&color=f8f8f8&style=flat-square>
 [contr-handlebars]: <https://img.shields.io/github/contributors/sunng87/handlebars-rust?label=&color=f8f8f8&style=flat-square>
 [contr-horrorshow]: <https://img.shields.io/github/contributors/Stebalien/horrorshow-rs?label=&color=f8f8f8&style=flat-square>
 [contr-hypertext]: <https://img.shields.io/github/contributors/vidhanio/hypertext?label=&color=f8f8f8&style=flat-square>
@@ -138,6 +145,7 @@ Run `./generate-table.py` to generate the table you see above.
 [contr-yew]: <https://img.shields.io/github/contributors/yewstack/yew?label=&color=f8f8f8&style=flat-square>
 
 [act-askama]: <https://img.shields.io/github/commit-activity/y/askama-rs/askama?label=&color=f8f8f8&style=flat-square>
+[act-dioxus]: <https://img.shields.io/github/commit-activity/y/DioxusLabs/dioxus?label=&color=f8f8f8&style=flat-square>
 [act-handlebars]: <https://img.shields.io/github/commit-activity/y/sunng87/handlebars-rust?label=&color=f8f8f8&style=flat-square>
 [act-horrorshow]: <https://img.shields.io/github/commit-activity/y/Stebalien/horrorshow-rs?label=&color=f8f8f8&style=flat-square>
 [act-hypertext]: <https://img.shields.io/github/commit-activity/y/vidhanio/hypertext?label=&color=f8f8f8&style=flat-square>
@@ -152,6 +160,7 @@ Run `./generate-table.py` to generate the table you see above.
 [act-yew]: <https://img.shields.io/github/commit-activity/y/yewstack/yew?label=&color=f8f8f8&style=flat-square>
 
 [repo-askama]: <https://github.com/askama-rs/askama>
+[repo-dioxus]: <https://github.com/DioxusLabs/dioxus>
 [repo-handlebars]: <https://github.com/sunng87/handlebars-rust>
 [repo-horrorshow]: <https://github.com/Stebalien/horrorshow-rs>
 [repo-hypertext]: <https://github.com/vidhanio/hypertext>

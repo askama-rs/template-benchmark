@@ -1,0 +1,11 @@
+[package]
+name = "tmpl-dioxus"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "Apache-2.0"
+
+[dependencies]
+tmpls = { version = "*", path = ".." }
+
+dioxus = { version = "0.6", default-features = false, features = ["html", "macro", "signals", "ssr"] }

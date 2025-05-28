@@ -59,6 +59,8 @@ macro_rules! for_each {
 
             let mut group = $c.benchmark_group(NAME);
 
+            #[cfg(feature = "dioxus")]
+            for_each!(dioxus, group, $input:$Input, $func);
             #[cfg(feature = "handlebars")]
             for_each!(handlebars, group, $input:$Input, $func);
             #[cfg(feature = "minijinja")]
