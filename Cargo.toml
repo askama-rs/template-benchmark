@@ -24,8 +24,18 @@ license = "Apache-2.0"
 [features]
 default = ["compiled", "interpreted"]
 
-compiled = ["askama", "askama_git", "horrorshow", "hypertext", "markup", "maud", "ructe", "sailfish", "vy"]
-interpreted = ["handlebars", "minijinja", "tera", "tinytemplate"]
+compiled = [
+    "askama",
+    "askama_git",
+    "horrorshow",
+    "hypertext",
+    "markup",
+    "maud",
+    "ructe",
+    "sailfish",
+    "vy",
+]
+interpreted = ["handlebars", "minijinja", "tera", "tinytemplate", "yew"]
 
 askama = ["dep:askama", "_contains_compiled"]
 askama_git = ["dep:askama_git", "_contains_compiled"]
@@ -40,6 +50,7 @@ sailfish = ["dep:sailfish", "_contains_compiled"]
 tera = ["dep:tera", "_contains_interpreted"]
 tinytemplate = ["dep:tinytemplate", "_contains_interpreted"]
 vy = ["dep:vy", "_contains_compiled"]
+yew = ["dep:yew", "_contains_interpreted"]
 
 _contains_compiled = []
 _contains_interpreted = []
@@ -60,6 +71,7 @@ sailfish = { version = "*", optional = true, path = "tmpls/sailfish", package = 
 tera = { version = "*", optional = true, path = "tmpls/tera", package = "tmpl-tera" }
 tinytemplate = { version = "*", optional = true, path = "tmpls/tinytemplate", package = "tmpl-tinytemplate" }
 vy = { version = "*", optional = true, path = "tmpls/vy", package = "tmpl-vy" }
+yew = { version = "*", optional = true, path = "tmpls/yew", package = "tmpl-yew" }
 
 ahash = { version = "0.8", features = ["no-rng"] }
 criterion = { version = "0.6", features = ["html_reports"] }

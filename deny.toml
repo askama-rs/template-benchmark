@@ -7,3 +7,9 @@ private = { ignore = true }
 allow-git = [
     "https://github.com/askama-rs/askama",
 ]
+
+[advisories]
+ignore = [
+    # `proc-macro-error` is unmaintained, but still used in yew
+    "RUSTSEC-2024-0370",
+]

@@ -67,6 +67,8 @@ macro_rules! for_each {
             for_each!(tera, group, $input:$Input, $func);
             #[cfg(feature = "tinytemplate")]
             for_each!(tinytemplate, group, $input:$Input, $func);
+            #[cfg(feature = "yew")]
+            for_each!(yew, group, $input:$Input, $func);
 
             group.finish();
         };

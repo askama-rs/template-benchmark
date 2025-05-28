@@ -1,0 +1,15 @@
+[package]
+name = "tmpl-yew"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "Apache-2.0"
+
+[dependencies]
+tmpls = { version = "*", path = ".." }
+
+parking_lot = { version = "0.12", features = ["arc_lock"] }
+pollster = "0.4"
+scopeguard = "1"
+yew = { version = "0.21", default-features = false, features = ["ssr"] }
+yew-autoprops = "0.4"

@@ -96,6 +96,8 @@ const TMPLS: &[(&str, fn(Case) -> Result<(), Error>)] = &[
     ("tinytemplate", tmpl::<tinytemplate::Benchmark>),
     #[cfg(feature = "vy")]
     ("vy", tmpl::<vy::Benchmark>),
+    #[cfg(feature = "yew")]
+    ("yew", tmpl::<yew::Benchmark>),
 ];
 
 struct Tmpls(usize);
