@@ -1,3 +1,6 @@
+//! This quick-and-dirty implementation is propably error-ridden and unsafe!
+//! DO NOT USE IN PRODUCTION!
+
 #[doc(hidden)]
 pub mod __reexport {
     pub use std::mem::transmute;

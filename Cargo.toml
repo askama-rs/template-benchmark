@@ -36,7 +36,7 @@ compiled = [
     "sailfish",
     "vy",
 ]
-interpreted = ["dioxus", "handlebars", "minijinja", "tera", "tinytemplate", "yew"]
+interpreted = ["dioxus", "handlebars", "leptos", "minijinja", "tera", "tinytemplate", "yew"]
 
 askama = ["dep:askama", "_contains_compiled"]
 askama_git = ["dep:askama_git", "_contains_compiled"]
@@ -44,6 +44,7 @@ dioxus = ["dep:dioxus", "_contains_interpreted"]
 handlebars = ["dep:handlebars", "_contains_interpreted"]
 horrorshow = ["dep:horrorshow", "_contains_compiled"]
 hypertext = ["dep:hypertext", "_contains_compiled"]
+leptos = ["dep:leptos", "_contains_interpreted"]
 markup = ["dep:markup", "_contains_compiled"]
 maud = ["dep:maud", "_contains_compiled"]
 minijinja = ["dep:minijinja", "_contains_interpreted"]
@@ -66,6 +67,7 @@ dioxus = { version = "*", optional = true, path = "tmpls/dioxus", package = "tmp
 handlebars = { version = "*", optional = true, path = "tmpls/handlebars", package = "tmpl-handlebars" }
 horrorshow = { version = "*", optional = true, path = "tmpls/horrorshow", package = "tmpl-horrorshow" }
 hypertext = { version = "*", optional = true, path = "tmpls/hypertext", package = "tmpl-hypertext" }
+leptos = { version = "*", optional = true, path = "tmpls/leptos", package = "tmpl-leptos" }
 markup = { version = "*", optional = true, path = "tmpls/markup", package = "tmpl-markup" }
 maud = { version = "*", optional = true, path = "tmpls/maud", package = "tmpl-maud" }
 minijinja = { version = "*", optional = true, path = "tmpls/minijinja", package = "tmpl-minijinja" }

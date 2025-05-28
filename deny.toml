@@ -1,6 +1,6 @@
 [licenses]
 version = 2
-allow = ["Apache-2.0", "MIT", "Unicode-3.0", "Zlib"]
+allow = ["Apache-2.0", "BSL-1.0", "MIT", "Unicode-3.0", "Zlib"]
 private = { ignore = true }
 
 [sources]
@@ -12,4 +12,6 @@ allow-git = [
 ignore = [
     # `proc-macro-error` is unmaintained, but still used in yew
     "RUSTSEC-2024-0370",
+    # `paste` is unmaintained, but still used in leptos
+    "RUSTSEC-2024-0436",
 ]

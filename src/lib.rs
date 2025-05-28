@@ -63,6 +63,8 @@ macro_rules! for_each {
             for_each!(dioxus, group, $input:$Input, $func);
             #[cfg(feature = "handlebars")]
             for_each!(handlebars, group, $input:$Input, $func);
+            #[cfg(feature = "leptos")]
+            for_each!(leptos, group, $input:$Input, $func);
             #[cfg(feature = "minijinja")]
             for_each!(minijinja, group, $input:$Input, $func);
             #[cfg(feature = "tera")]
