@@ -16,20 +16,21 @@ All of them are well maintained, mature and perform HTML escaping automatically.
 | Crate          | Docs                                            | Repo                               | Code         | Recent<br>Downloads                  | Github<br>Stars                              | Contrib-<br>utors                            | Recent<br>Commits                          |
 | -------------- | ----------------------------------------------- | ---------------------------------- | -------------| ------------------------------------ | -------------------------------------------- | -------------------------------------------- | ------------------------------------------ |
 | [askama]       | [![][docs-img-askama]][docs-askama]             | [![][img-repo]][repo-askama]       | pre-compiled | [![][dl-askama]][askama]             | [![][stars-askama]][repo-askama]             | [![][contr-askama]][repo-askama]             | [![][act-askama]][repo-askama]             |
-| [dioxus]       | [![][docs-img-dioxus]][docs-dioxus]             | [![][img-repo]][repo-dioxus]       | vDOM         | [![][dl-dioxus]][dioxus]             | [![][stars-dioxus]][repo-dioxus]             | [![][contr-dioxus]][repo-dioxus]             | [![][act-dioxus]][repo-dioxus]             |
+| [dioxus]       | [![][docs-img-dioxus]][docs-dioxus]             | [![][img-repo]][repo-dioxus]       | ssr          | [![][dl-dioxus]][dioxus]             | [![][stars-dioxus]][repo-dioxus]             | [![][contr-dioxus]][repo-dioxus]             | [![][act-dioxus]][repo-dioxus]             |
 | [handlebars]   | [![][docs-img-handlebars]][docs-handlebars]     | [![][img-repo]][repo-handlebars]   | interpreted  | [![][dl-handlebars]][handlebars]     | [![][stars-handlebars]][repo-handlebars]     | [![][contr-handlebars]][repo-handlebars]     | [![][act-handlebars]][repo-handlebars]     |
 | [horrorshow]   | [![][docs-img-horrorshow]][docs-horrorshow]     | [![][img-repo]][repo-horrorshow]   | pre-compiled | [![][dl-horrorshow]][horrorshow]     | [![][stars-horrorshow]][repo-horrorshow]     | [![][contr-horrorshow]][repo-horrorshow]     | [![][act-horrorshow]][repo-horrorshow]     |
 | [hypertext]    | [![][docs-img-hypertext]][docs-hypertext]       | [![][img-repo]][repo-hypertext]    | pre-compiled | [![][dl-hypertext]][hypertext]       | [![][stars-hypertext]][repo-hypertext]       | [![][contr-hypertext]][repo-hypertext]       | [![][act-hypertext]][repo-hypertext]       |
-| [leptos]       | [![][docs-img-leptos]][docs-leptos]             | [![][img-repo]][repo-leptos]       | vDOM         | [![][dl-leptos]][leptos]             | [![][stars-leptos]][repo-leptos]             | [![][contr-leptos]][repo-leptos]             | [![][act-leptos]][repo-leptos]             |
+| [leptos]       | [![][docs-img-leptos]][docs-leptos]             | [![][img-repo]][repo-leptos]       | ssr          | [![][dl-leptos]][leptos]             | [![][stars-leptos]][repo-leptos]             | [![][contr-leptos]][repo-leptos]             | [![][act-leptos]][repo-leptos]             |
 | [markup]       | [![][docs-img-markup]][docs-markup]             | [![][img-repo]][repo-markup]       | pre-compiled | [![][dl-markup]][markup]             | [![][stars-markup]][repo-markup]             | [![][contr-markup]][repo-markup]             | [![][act-markup]][repo-markup]             |
 | [maud]         | [![][docs-img-maud]][docs-maud]                 | [![][img-repo]][repo-maud]         | pre-compiled | [![][dl-maud]][maud]                 | [![][stars-maud]][repo-maud]                 | [![][contr-maud]][repo-maud]                 | [![][act-maud]][repo-maud]                 |
 | [minijinja]    | [![][docs-img-minijinja]][docs-minijinja]       | [![][img-repo]][repo-minijinja]    | interpreted  | [![][dl-minijinja]][minijinja]       | [![][stars-minijinja]][repo-minijinja]       | [![][contr-minijinja]][repo-minijinja]       | [![][act-minijinja]][repo-minijinja]       |
 | [ructe]        | [![][docs-img-ructe]][docs-ructe]               | [![][img-repo]][repo-ructe]        | pre-compiled | [![][dl-ructe]][ructe]               | [![][stars-ructe]][repo-ructe]               | [![][contr-ructe]][repo-ructe]               | [![][act-ructe]][repo-ructe]               |
 | [sailfish]     | [![][docs-img-sailfish]][docs-sailfish]         | [![][img-repo]][repo-sailfish]     | pre-compiled | [![][dl-sailfish]][sailfish]         | [![][stars-sailfish]][repo-sailfish]         | [![][contr-sailfish]][repo-sailfish]         | [![][act-sailfish]][repo-sailfish]         |
+| [sycamore]     | [![][docs-img-sycamore]][docs-sycamore]         | [![][img-repo]][repo-sycamore]     | ssr          | [![][dl-sycamore]][sycamore]         | [![][stars-sycamore]][repo-sycamore]         | [![][contr-sycamore]][repo-sycamore]         | [![][act-sycamore]][repo-sycamore]         |
 | [tera]         | [![][docs-img-tera]][docs-tera]                 | [![][img-repo]][repo-tera]         | interpreted  | [![][dl-tera]][tera]                 | [![][stars-tera]][repo-tera]                 | [![][contr-tera]][repo-tera]                 | [![][act-tera]][repo-tera]                 |
 | [tinytemplate] | [![][docs-img-tinytemplate]][docs-tinytemplate] | [![][img-repo]][repo-tinytemplate] | interpreted  | [![][dl-tinytemplate]][tinytemplate] | [![][stars-tinytemplate]][repo-tinytemplate] | [![][contr-tinytemplate]][repo-tinytemplate] | [![][act-tinytemplate]][repo-tinytemplate] |
 | [vy]           | [![][docs-img-vy]][docs-vy]                     | [![][img-repo]][repo-vy]           | pre-compiled | [![][dl-vy]][vy]                     | [![][stars-vy]][repo-vy]                     | [![][contr-vy]][repo-vy]                     | [![][act-vy]][repo-vy]                     |
-| [yew]          | [![][docs-img-yew]][docs-yew]                   | [![][img-repo]][repo-yew]          | vDOM         | [![][dl-yew]][yew]                   | [![][stars-yew]][repo-yew]                   | [![][contr-yew]][repo-yew]                   | [![][act-yew]][repo-yew]                   |
+| [yew]          | [![][docs-img-yew]][docs-yew]                   | [![][img-repo]][repo-yew]          | ssr          | [![][dl-yew]][yew]                   | [![][stars-yew]][repo-yew]                   | [![][contr-yew]][repo-yew]                   | [![][act-yew]][repo-yew]                   |
 
 Please see also [*Rust web framework comparison*].
 
@@ -66,6 +67,7 @@ Run `./generate-table.py` to generate the table you see above.
 [minijinja]: <https://crates.io/crates/minijinja/>
 [ructe]: <https://crates.io/crates/ructe/>
 [sailfish]: <https://crates.io/crates/sailfish/>
+[sycamore]: <https://crates.io/crates/sycamore/>
 [tera]: <https://crates.io/crates/tera/>
 [tinytemplate]: <https://crates.io/crates/tinytemplate/>
 [vy]: <https://crates.io/crates/vy/>
@@ -82,6 +84,7 @@ Run `./generate-table.py` to generate the table you see above.
 [docs-minijinja]: <https://docs.rs/minijinja/latest/minijinja>
 [docs-ructe]: <https://docs.rs/ructe/latest/ructe>
 [docs-sailfish]: <https://docs.rs/sailfish/latest/sailfish>
+[docs-sycamore]: <https://docs.rs/sycamore/latest/sycamore>
 [docs-tera]: <https://docs.rs/tera/latest/tera>
 [docs-tinytemplate]: <https://docs.rs/tinytemplate/latest/tinytemplate>
 [docs-vy]: <https://docs.rs/vy/latest/vy>
@@ -98,6 +101,7 @@ Run `./generate-table.py` to generate the table you see above.
 [docs-img-minijinja]: <https://img.shields.io/docsrs/minijinja?label=&style=flat-square>
 [docs-img-ructe]: <https://img.shields.io/docsrs/ructe?label=&style=flat-square>
 [docs-img-sailfish]: <https://img.shields.io/docsrs/sailfish?label=&style=flat-square>
+[docs-img-sycamore]: <https://img.shields.io/docsrs/sycamore?label=&style=flat-square>
 [docs-img-tera]: <https://img.shields.io/docsrs/tera?label=&style=flat-square>
 [docs-img-tinytemplate]: <https://img.shields.io/docsrs/tinytemplate?label=&style=flat-square>
 [docs-img-vy]: <https://img.shields.io/docsrs/vy?label=&style=flat-square>
@@ -114,6 +118,7 @@ Run `./generate-table.py` to generate the table you see above.
 [dl-minijinja]: <https://img.shields.io/crates/dr/minijinja?label=&color=f8f8f8&style=flat-square>
 [dl-ructe]: <https://img.shields.io/crates/dr/ructe?label=&color=f8f8f8&style=flat-square>
 [dl-sailfish]: <https://img.shields.io/crates/dr/sailfish?label=&color=f8f8f8&style=flat-square>
+[dl-sycamore]: <https://img.shields.io/crates/dr/sycamore?label=&color=f8f8f8&style=flat-square>
 [dl-tera]: <https://img.shields.io/crates/dr/tera?label=&color=f8f8f8&style=flat-square>
 [dl-tinytemplate]: <https://img.shields.io/crates/dr/tinytemplate?label=&color=f8f8f8&style=flat-square>
 [dl-vy]: <https://img.shields.io/crates/dr/vy?label=&color=f8f8f8&style=flat-square>
@@ -130,6 +135,7 @@ Run `./generate-table.py` to generate the table you see above.
 [stars-minijinja]: <https://img.shields.io/github/stars/mitsuhiko/minijinja?label=&color=f8f8f8&style=flat-square>
 [stars-ructe]: <https://img.shields.io/github/stars/kaj/ructe?label=&color=f8f8f8&style=flat-square>
 [stars-sailfish]: <https://img.shields.io/github/stars/rust-sailfish/sailfish?label=&color=f8f8f8&style=flat-square>
+[stars-sycamore]: <https://img.shields.io/github/stars/sycamore-rs/sycamore?label=&color=f8f8f8&style=flat-square>
 [stars-tera]: <https://img.shields.io/github/stars/Keats/tera?label=&color=f8f8f8&style=flat-square>
 [stars-tinytemplate]: <https://img.shields.io/github/stars/bheisler/TinyTemplate?label=&color=f8f8f8&style=flat-square>
 [stars-vy]: <https://img.shields.io/github/stars/JonahLund/vy?label=&color=f8f8f8&style=flat-square>
@@ -146,6 +152,7 @@ Run `./generate-table.py` to generate the table you see above.
 [contr-minijinja]: <https://img.shields.io/github/contributors/mitsuhiko/minijinja?label=&color=f8f8f8&style=flat-square>
 [contr-ructe]: <https://img.shields.io/github/contributors/kaj/ructe?label=&color=f8f8f8&style=flat-square>
 [contr-sailfish]: <https://img.shields.io/github/contributors/rust-sailfish/sailfish?label=&color=f8f8f8&style=flat-square>
+[contr-sycamore]: <https://img.shields.io/github/contributors/sycamore-rs/sycamore?label=&color=f8f8f8&style=flat-square>
 [contr-tera]: <https://img.shields.io/github/contributors/Keats/tera?label=&color=f8f8f8&style=flat-square>
 [contr-tinytemplate]: <https://img.shields.io/github/contributors/bheisler/TinyTemplate?label=&color=f8f8f8&style=flat-square>
 [contr-vy]: <https://img.shields.io/github/contributors/JonahLund/vy?label=&color=f8f8f8&style=flat-square>
@@ -162,6 +169,7 @@ Run `./generate-table.py` to generate the table you see above.
 [act-minijinja]: <https://img.shields.io/github/commit-activity/y/mitsuhiko/minijinja?label=&color=f8f8f8&style=flat-square>
 [act-ructe]: <https://img.shields.io/github/commit-activity/y/kaj/ructe?label=&color=f8f8f8&style=flat-square>
 [act-sailfish]: <https://img.shields.io/github/commit-activity/y/rust-sailfish/sailfish?label=&color=f8f8f8&style=flat-square>
+[act-sycamore]: <https://img.shields.io/github/commit-activity/y/sycamore-rs/sycamore?label=&color=f8f8f8&style=flat-square>
 [act-tera]: <https://img.shields.io/github/commit-activity/y/Keats/tera?label=&color=f8f8f8&style=flat-square>
 [act-tinytemplate]: <https://img.shields.io/github/commit-activity/y/bheisler/TinyTemplate?label=&color=f8f8f8&style=flat-square>
 [act-vy]: <https://img.shields.io/github/commit-activity/y/JonahLund/vy?label=&color=f8f8f8&style=flat-square>
@@ -178,6 +186,7 @@ Run `./generate-table.py` to generate the table you see above.
 [repo-minijinja]: <https://github.com/mitsuhiko/minijinja>
 [repo-ructe]: <https://github.com/kaj/ructe>
 [repo-sailfish]: <https://github.com/rust-sailfish/sailfish>
+[repo-sycamore]: <https://github.com/sycamore-rs/sycamore>
 [repo-tera]: <https://github.com/Keats/tera>
 [repo-tinytemplate]: <https://github.com/bheisler/TinyTemplate>
 [repo-vy]: <https://github.com/JonahLund/vy>

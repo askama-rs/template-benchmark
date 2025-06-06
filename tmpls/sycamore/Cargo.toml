@@ -1,0 +1,11 @@
+[package]
+name = "tmpl-sycamore"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "Apache-2.0"
+
+[dependencies]
+tmpls = { version = "*", path = ".." }
+
+sycamore = { version = "0.9", default-features = false, features = ["web"] }

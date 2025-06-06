@@ -1,3 +1,6 @@
+//! This quick-and-dirty implementation is error-ridden and unsafe!
+//! DO NOT USE IN PRODUCTION!
+
 mod lifetimeless;
 
 use std::convert::Infallible;

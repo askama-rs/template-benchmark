@@ -23,7 +23,7 @@ publish = false
 license = "Apache-2.0"
 
 [features]
-default = ["compiled", "interpreted"]
+default = ["compiled", "interpreted", "ssr"]
 
 compiled = [
     "askama",
@@ -36,27 +36,30 @@ compiled = [
     "sailfish",
     "vy",
 ]
-interpreted = ["dioxus", "handlebars", "leptos", "minijinja", "tera", "tinytemplate", "yew"]
+interpreted = ["handlebars", "minijinja", "tera", "tinytemplate"]
+ssr = ["dioxus", "leptos", "sycamore", "yew"]
 
 askama = ["dep:askama", "_contains_compiled"]
 askama_git = ["dep:askama_git", "_contains_compiled"]
-dioxus = ["dep:dioxus", "_contains_interpreted"]
+dioxus = ["dep:dioxus", "_contains_ssr"]
 handlebars = ["dep:handlebars", "_contains_interpreted"]
 horrorshow = ["dep:horrorshow", "_contains_compiled"]
 hypertext = ["dep:hypertext", "_contains_compiled"]
-leptos = ["dep:leptos", "_contains_interpreted"]
+leptos = ["dep:leptos", "_contains_ssr"]
 markup = ["dep:markup", "_contains_compiled"]
 maud = ["dep:maud", "_contains_compiled"]
 minijinja = ["dep:minijinja", "_contains_interpreted"]
 ructe = ["dep:ructe", "_contains_compiled"]
 sailfish = ["dep:sailfish", "_contains_compiled"]
+sycamore = ["dep:sycamore", "_contains_ssr"]
 tera = ["dep:tera", "_contains_interpreted"]
 tinytemplate = ["dep:tinytemplate", "_contains_interpreted"]
 vy = ["dep:vy", "_contains_compiled"]
-yew = ["dep:yew", "_contains_interpreted"]
+yew = ["dep:yew", "_contains_ssr"]
 
 _contains_compiled = []
 _contains_interpreted = []
+_contains_ssr = []
 
 [dependencies]
 tmpls = { version = "*", path = "tmpls" }
@@ -73,6 +76,7 @@ maud = { version = "*", optional = true, path = "tmpls/maud", package = "tmpl-ma
 minijinja = { version = "*", optional = true, path = "tmpls/minijinja", package = "tmpl-minijinja" }
 ructe = { version = "*", optional = true, path = "tmpls/ructe", package = "tmpl-ructe" }
 sailfish = { version = "*", optional = true, path = "tmpls/sailfish", package = "tmpl-sailfish" }
+sycamore = { version = "*", optional = true, path = "tmpls/sycamore", package = "tmpl-sycamore" }
 tera = { version = "*", optional = true, path = "tmpls/tera", package = "tmpl-tera" }
 tinytemplate = { version = "*", optional = true, path = "tmpls/tinytemplate", package = "tmpl-tinytemplate" }
 vy = { version = "*", optional = true, path = "tmpls/vy", package = "tmpl-vy" }

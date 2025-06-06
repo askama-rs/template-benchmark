@@ -94,6 +94,8 @@ const TMPLS: &[(&str, fn(Case) -> Result<(), Error>)] = &[
     ("ructe", tmpl::<ructe::Benchmark>),
     #[cfg(feature = "sailfish")]
     ("sailfish", tmpl::<sailfish::Benchmark>),
+    #[cfg(feature = "sycamore")]
+    ("sycamore", tmpl::<sycamore::Benchmark>),
     #[cfg(feature = "tera")]
     ("tera", tmpl::<tera::Benchmark>),
     #[cfg(feature = "tinytemplate")]

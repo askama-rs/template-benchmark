@@ -22,9 +22,6 @@ macro_rules! for_each {
     ($c:ident, $input:ident : $Input:ident, $func:ident) => {{
         #[cfg(feature = "_contains_compiled")]
         let _ = {
-            #[cfg(not(feature = "_contains_interpreted"))]
-            const NAME: &str = stringify!($func);
-            #[cfg(feature = "_contains_interpreted")]
             const NAME: &str = concat!(stringify!($func), " (compiled)");
 
             let mut group = $c.benchmark_group(NAME);
@@ -52,25 +49,33 @@ macro_rules! for_each {
         };
         #[cfg(feature = "_contains_interpreted")]
         let _ = {
-            #[cfg(not(feature = "_contains_compiled"))]
-            const NAME: &str = stringify!($func);
-            #[cfg(feature = "_contains_compiled")]
             const NAME: &str = concat!(stringify!($func), " (interpreted)");
 
             let mut group = $c.benchmark_group(NAME);
 
-            #[cfg(feature = "dioxus")]
-            for_each!(dioxus, group, $input:$Input, $func);
             #[cfg(feature = "handlebars")]
             for_each!(handlebars, group, $input:$Input, $func);
-            #[cfg(feature = "leptos")]
-            for_each!(leptos, group, $input:$Input, $func);
             #[cfg(feature = "minijinja")]
             for_each!(minijinja, group, $input:$Input, $func);
             #[cfg(feature = "tera")]
             for_each!(tera, group, $input:$Input, $func);
             #[cfg(feature = "tinytemplate")]
             for_each!(tinytemplate, group, $input:$Input, $func);
+
+            group.finish();
+        };
+        #[cfg(feature = "_contains_ssr")]
+        let _ = {
+            const NAME: &str = concat!(stringify!($func), " (interpreted)");
+
+            let mut group = $c.benchmark_group(NAME);
+
+            #[cfg(feature = "dioxus")]
+            for_each!(dioxus, group, $input:$Input, $func);
+            #[cfg(feature = "leptos")]
+            for_each!(leptos, group, $input:$Input, $func);
+            #[cfg(feature = "sycamore")]
+            for_each!(sycamore, group, $input:$Input, $func);
             #[cfg(feature = "yew")]
             for_each!(yew, group, $input:$Input, $func);
 
@@ -100,7 +105,6 @@ fn run<B: Benchmark, I>(
 ) {
     let mut output = B::Output::default();
     func(this, &mut output, input).unwrap();
-    // dbg!(std::str::from_utf8(output.as_bytes()).unwrap());
     let expected_hash = collect_output(&mut output);
 
     b.iter_custom(|iters| {
