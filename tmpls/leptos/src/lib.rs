@@ -1,6 +1,7 @@
 use std::convert::Infallible;
 
 use leptos::prelude::*;
+use leptos::tachys::view::Position;
 use tmpls::{BigTable, Teams};
 
 #[derive(Debug, Default)]
@@ -28,7 +29,7 @@ impl tmpls::Benchmark for Benchmark {
                 }).collect::<Vec<_>>() }
             </table>
         };
-        *output = view.to_html();
+        view.to_html_with_buf(output, &mut Position::FirstChild, true, false, vec![]);
         Ok(())
     }
 
@@ -53,7 +54,7 @@ impl tmpls::Benchmark for Benchmark {
                 </body>
             </html>
         };
-        *output = view.to_html();
+        view.to_html_with_buf(output, &mut Position::FirstChild, true, false, vec![]);
         Ok(())
     }
 }
