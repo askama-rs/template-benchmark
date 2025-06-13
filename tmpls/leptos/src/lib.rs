@@ -28,7 +28,7 @@ impl tmpls::Benchmark for Benchmark {
                 }).collect::<Vec<_>>() }
             </table>
         };
-        *output = view.to_html().replace("<!>", "");
+        *output = view.to_html();
         Ok(())
     }
 
@@ -53,7 +53,7 @@ impl tmpls::Benchmark for Benchmark {
                 </body>
             </html>
         };
-        *output = view.to_html().replace("<!>", "");
+        *output = view.to_html();
         Ok(())
     }
 }
