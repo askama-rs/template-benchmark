@@ -17,5 +17,5 @@ fn new_criterion() -> Criterion {
         .significance_level(0.02)
         .warm_up_time(Duration::from_secs(5))
         .plotting_backend(PlottingBackend::Gnuplot)
-        .measurement_time(Duration::from_secs(60))
+        .measurement_time(Duration::from_secs(30))
 }

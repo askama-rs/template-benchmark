@@ -9,3 +9,4 @@ license = "Apache-2.0"
 tmpls = { version = "*", path = ".." }
 
 liquid = "0.26"
+serde = "1"
