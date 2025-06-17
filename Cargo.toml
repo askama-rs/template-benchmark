@@ -6,6 +6,7 @@ members = [
     "tmpls/askama_git",
     "tmpls/dioxus",
     "tmpls/horrorshow",
+    "tmpls/liquid",
     "tmpls/markup",
     "tmpls/minijinja",
     "tmpls/ructe",
@@ -36,7 +37,7 @@ compiled = [
     "sailfish",
     "vy",
 ]
-interpreted = ["handlebars", "minijinja", "tera", "tinytemplate"]
+interpreted = ["handlebars", "liquid", "minijinja", "tera", "tinytemplate"]
 ssr = ["dioxus", "leptos", "sycamore", "yew"]
 
 askama = ["dep:askama", "_contains_compiled"]
@@ -46,6 +47,7 @@ handlebars = ["dep:handlebars", "_contains_interpreted"]
 horrorshow = ["dep:horrorshow", "_contains_compiled"]
 hypertext = ["dep:hypertext", "_contains_compiled"]
 leptos = ["dep:leptos", "_contains_ssr"]
+liquid = ["dep:liquid", "_contains_interpreted"]
 markup = ["dep:markup", "_contains_compiled"]
 maud = ["dep:maud", "_contains_compiled"]
 minijinja = ["dep:minijinja", "_contains_interpreted"]
@@ -71,6 +73,7 @@ handlebars = { version = "*", optional = true, path = "tmpls/handlebars", packag
 horrorshow = { version = "*", optional = true, path = "tmpls/horrorshow", package = "tmpl-horrorshow" }
 hypertext = { version = "*", optional = true, path = "tmpls/hypertext", package = "tmpl-hypertext" }
 leptos = { version = "*", optional = true, path = "tmpls/leptos", package = "tmpl-leptos" }
+liquid = { version = "*", optional = true, path = "tmpls/liquid", package = "tmpl-liquid" }
 markup = { version = "*", optional = true, path = "tmpls/markup", package = "tmpl-markup" }
 maud = { version = "*", optional = true, path = "tmpls/maud", package = "tmpl-maud" }
 minijinja = { version = "*", optional = true, path = "tmpls/minijinja", package = "tmpl-minijinja" }

@@ -55,6 +55,8 @@ macro_rules! for_each {
 
             #[cfg(feature = "handlebars")]
             for_each!(handlebars, group, $input:$Input, $func);
+            #[cfg(feature = "liquid")]
+            for_each!(liquid, group, $input:$Input, $func);
             #[cfg(feature = "minijinja")]
             for_each!(minijinja, group, $input:$Input, $func);
             #[cfg(feature = "tera")]

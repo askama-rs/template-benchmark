@@ -84,6 +84,8 @@ const TMPLS: &[(&str, fn(Case) -> Result<(), Error>)] = &[
     ("hypertext", tmpl::<hypertext::Benchmark>),
     #[cfg(feature = "leptos")]
     ("leptos", tmpl::<leptos::Benchmark>),
+    #[cfg(feature = "liquid")]
+    ("liquid", tmpl::<liquid::Benchmark>),
     #[cfg(feature = "markup")]
     ("markup", tmpl::<markup::Benchmark>),
     #[cfg(feature = "maud")]
