@@ -21,7 +21,7 @@ jobs:
   Fmt:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install rust
         uses: dtolnay/rust-toolchain@master
@@ -36,7 +36,7 @@ jobs:
     name: Check order in Cargo.toml
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: taiki-e/install-action@v2
         with:
           tool: cargo-sort
@@ -48,7 +48,7 @@ jobs:
       - CargoSort
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install rust
         uses: dtolnay/rust-toolchain@master
@@ -64,7 +64,7 @@ jobs:
       - CargoSort
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install rust
         uses: dtolnay/rust-toolchain@master
@@ -81,7 +81,7 @@ jobs:
       - CargoSort
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: EmbarkStudios/cargo-deny-action@v2
 
   DevSkim:
@@ -94,7 +94,7 @@ jobs:
       contents: read
       security-events: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Run DevSkim scanner
         uses: microsoft/DevSkim-Action@v1
@@ -116,7 +116,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install dependencies
         run: |
