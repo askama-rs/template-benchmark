@@ -11,5 +11,5 @@ tmpls = { version = "*", path = ".." }
 parking_lot = { version = "0.12", features = ["arc_lock"] }
 pollster = "0.4"
 scopeguard = "1"
-yew = { version = "0.21", default-features = false, features = ["ssr"] }
+yew = { version = "0.22", default-features = false, features = ["ssr"] }
 yew-autoprops = "0.4"

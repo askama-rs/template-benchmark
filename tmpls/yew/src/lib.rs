@@ -46,7 +46,7 @@ fn BigAppleApp(input: &Lifetimeless<BigTable>) -> Html {
         <table>
             { for table.iter().map(|row| html! {
                 <tr>
-                    { for row.iter().map(|col| html! {
+                    { for row.iter().map(|&col| html! {
                         <td>{ col }</td>
                     }) }
                 </tr>
@@ -58,7 +58,7 @@ fn BigAppleApp(input: &Lifetimeless<BigTable>) -> Html {
 #[autoprops]
 #[function_component]
 fn TeamsApp(input: &Lifetimeless<Teams>) -> Html {
-    let Teams { year, teams } = &**input;
+    let Teams { year, ref teams } = **input;
     html! {
         <html>
             <head>

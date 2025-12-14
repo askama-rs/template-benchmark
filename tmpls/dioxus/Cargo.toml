@@ -8,4 +8,4 @@ license = "Apache-2.0"
 [dependencies]
 tmpls = { version = "*", path = ".." }
 
-dioxus = { version = "0.6", default-features = false, features = ["html", "macro", "signals", "ssr"] }
+dioxus = { version = "0.7", default-features = false, features = ["html", "macro", "signals", "ssr"] }
