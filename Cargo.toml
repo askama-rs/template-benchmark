@@ -86,7 +86,7 @@ vy = { version = "*", optional = true, path = "tmpls/vy", package = "tmpl-vy" }
 yew = { version = "*", optional = true, path = "tmpls/yew", package = "tmpl-yew" }
 
 ahash = { version = "0.8", features = ["no-rng"] }
-criterion = { version = "0.7", features = ["html_reports"] }
+criterion = { version = "0.8", features = ["html_reports"] }
 pretty-error-debug = "0.3"
 thiserror = "2"
 

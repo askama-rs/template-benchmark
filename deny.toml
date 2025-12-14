@@ -1,6 +1,6 @@
 [licenses]
 version = 2
-allow = ["Apache-2.0", "BSL-1.0", "MIT", "Unicode-3.0", "Zlib"]
+allow = ["Apache-2.0", "BSL-1.0", "CC0-1.0", "ISC", "MIT", "Unicode-3.0", "Zlib"]
 private = { ignore = true }
 
 [sources]

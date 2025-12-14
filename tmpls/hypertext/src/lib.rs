@@ -1,6 +1,8 @@
 use std::convert::Infallible;
+use std::mem::take;
 
-use hypertext::{GlobalAttributes, Renderable, html_elements, maud};
+use hypertext::Buffer;
+use hypertext::prelude::*;
 use tmpls::{BigTable, Teams};
 
 #[derive(Debug, Default)]
@@ -15,6 +17,7 @@ impl tmpls::Benchmark for Benchmark {
         output: &mut Self::Output,
         input: &BigTable,
     ) -> Result<(), Self::Error> {
+        let mut buffer = Buffer::dangerously_from_string(take(output));
         maud! {
             table {
                 @for row in &input.table {
@@ -26,11 +29,13 @@ impl tmpls::Benchmark for Benchmark {
                 }
             }
         }
-        .render_to(output);
+        .render_to(&mut buffer);
+        *output = buffer.rendered().into_inner();
         Ok(())
     }
 
     fn teams(&mut self, output: &mut Self::Output, input: &Teams) -> Result<(), Self::Error> {
+        let mut buffer = Buffer::dangerously_from_string(take(output));
         maud! {
             html {
                 head {
@@ -48,7 +53,8 @@ impl tmpls::Benchmark for Benchmark {
                 }
             }
         }
-        .render_to(output);
+        .render_to(&mut buffer);
+        *output = buffer.rendered().into_inner();
         Ok(())
     }
 }
