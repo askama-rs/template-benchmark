@@ -49,7 +49,7 @@ The "teams" benchmark contains a list of four sport teams and their scores.
 The former test contains only raw data, but a lot of it.
 The latter test includes texts that (might) need escaping, and "if" conditions.
 
-To run the benchmarks on your machine, clone the repo, and execute `cargo benchmark`.
+To run the benchmarks on your machine, clone the repo, and execute `cargo bench`.
 The console will contain performance numbers,
 and the file `target/criterion/report/index.html` will contain more information.
 Run `./generate-table.py` to generate the table you see above.
