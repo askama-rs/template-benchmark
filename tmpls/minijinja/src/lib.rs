@@ -29,7 +29,7 @@ impl tmpls::Benchmark for Benchmark {
         self.env
             .get_template("big-table")
             .unwrap()
-            .render_to_write(input, output)
+            .render_captured_to(input, output)
             .map(|_| ())
     }
 
@@ -37,7 +37,7 @@ impl tmpls::Benchmark for Benchmark {
         self.env
             .get_template("teams")
             .unwrap()
-            .render_to_write(input, output)
+            .render_captured_to(input, output)
             .map(|_| ())
     }
 }
