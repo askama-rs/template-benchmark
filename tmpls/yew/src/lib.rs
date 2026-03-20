@@ -10,7 +10,7 @@ use tmpls::{BigTable, Teams};
 use yew::{Html, LocalServerRenderer, function_component, html};
 use yew_autoprops::autoprops;
 
-use crate::lifetimeless::Lifetimeless;
+use crate::lifetimeless::{Lifetimeless, lifetimeless};
 
 #[derive(Debug, Default)]
 pub struct Benchmark;

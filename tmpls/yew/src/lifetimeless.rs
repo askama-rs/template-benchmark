@@ -49,7 +49,6 @@ impl<T: PartialEq + 'static> PartialEq for Lifetimeless<T> {
     }
 }
 
-#[macro_export]
 macro_rules! lifetimeless {
     ($ident:ident: &$ty:ty) => {
         let $ident: &$ty = $ident;
@@ -66,3 +65,5 @@ macro_rules! lifetimeless {
         let $ident = unsafe { $crate::lifetimeless::__reexport::Lifetimeless::_new(&$ident) };
     };
 }
+
+pub(crate) use lifetimeless;
