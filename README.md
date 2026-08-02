@@ -10,7 +10,7 @@ e.g. because you have no re-compilation times, then it might still be the better
 Only you can decide which characteristics of a template engine
 (runtime speed, simplicity of programming, …) are important to you.
 
-Currently, we compare 17 different template engines.
+Currently, we compare 18 different template engines.
 All of them are well maintained, mature and perform HTML escaping automatically.
 
 | Crate          | Docs                                            | Repo                               | Code         | Recent<br>Downloads                  | Github<br>Stars                              | Contrib-<br>utors                            | Recent<br>Commits                          |
@@ -20,6 +20,7 @@ All of them are well maintained, mature and perform HTML escaping automatically.
 | [handlebars]   | [![][docs-img-handlebars]][docs-handlebars]     | [![][img-repo]][repo-handlebars]   | interpreted  | [![][dl-handlebars]][handlebars]     | [![][stars-handlebars]][repo-handlebars]     | [![][contr-handlebars]][repo-handlebars]     | [![][act-handlebars]][repo-handlebars]     |
 | [horrorshow]   | [![][docs-img-horrorshow]][docs-horrorshow]     | [![][img-repo]][repo-horrorshow]   | pre-compiled | [![][dl-horrorshow]][horrorshow]     | [![][stars-horrorshow]][repo-horrorshow]     | [![][contr-horrorshow]][repo-horrorshow]     | [![][act-horrorshow]][repo-horrorshow]     |
 | [hypertext]    | [![][docs-img-hypertext]][docs-hypertext]       | [![][img-repo]][repo-hypertext]    | pre-compiled | [![][dl-hypertext]][hypertext]       | [![][stars-hypertext]][repo-hypertext]       | [![][contr-hypertext]][repo-hypertext]       | [![][act-hypertext]][repo-hypertext]       |
+| [hypo]    | [![][docs-img-hypo]][docs-hypo]       | [![][img-repo]][repo-hypo]    | pre-compiled | [![][dl-hypo]][hypo]       | [![][stars-hypo]][repo-hypo]       | [![][contr-hypo]][repo-hypo]       | [![][act-hypo]][repo-hypo]       |
 | [leptos]       | [![][docs-img-leptos]][docs-leptos]             | [![][img-repo]][repo-leptos]       | ssr          | [![][dl-leptos]][leptos]             | [![][stars-leptos]][repo-leptos]             | [![][contr-leptos]][repo-leptos]             | [![][act-leptos]][repo-leptos]             |
 | [liquid]       | [![][docs-img-liquid]][docs-liquid]             | [![][img-repo]][repo-liquid]       | interpreted  | [![][dl-liquid]][liquid]             | [![][stars-liquid]][repo-liquid]             | [![][contr-liquid]][repo-liquid]             | [![][act-liquid]][repo-liquid]             |
 | [markup]       | [![][docs-img-markup]][docs-markup]             | [![][img-repo]][repo-markup]       | pre-compiled | [![][dl-markup]][markup]             | [![][stars-markup]][repo-markup]             | [![][contr-markup]][repo-markup]             | [![][act-markup]][repo-markup]             |
@@ -62,6 +63,7 @@ Run `./generate-table.py` to generate the table you see above.
 [handlebars]: <https://crates.io/crates/handlebars/>
 [horrorshow]: <https://crates.io/crates/horrorshow/>
 [hypertext]: <https://crates.io/crates/hypertext/>
+[hypo]: <https://crates.io/crates/hypo/>
 [leptos]: <https://crates.io/crates/leptos/>
 [liquid]: <https://crates.io/crates/liquid/>
 [markup]: <https://crates.io/crates/markup/>
@@ -80,6 +82,7 @@ Run `./generate-table.py` to generate the table you see above.
 [docs-handlebars]: <https://docs.rs/handlebars/latest/handlebars>
 [docs-horrorshow]: <https://docs.rs/horrorshow/latest/horrorshow>
 [docs-hypertext]: <https://docs.rs/hypertext/latest/hypertext>
+[docs-hypo]: <https://docs.rs/hypo/latest/hypo>
 [docs-leptos]: <https://docs.rs/leptos/latest/leptos>
 [docs-liquid]: <https://docs.rs/liquid/latest/liquid>
 [docs-markup]: <https://docs.rs/markup/latest/markup>
@@ -98,6 +101,7 @@ Run `./generate-table.py` to generate the table you see above.
 [docs-img-handlebars]: <https://img.shields.io/docsrs/handlebars?label=&style=flat-square>
 [docs-img-horrorshow]: <https://img.shields.io/docsrs/horrorshow?label=&style=flat-square>
 [docs-img-hypertext]: <https://img.shields.io/docsrs/hypertext?label=&style=flat-square>
+[docs-img-hypo]: <https://img.shields.io/docsrs/hypo?label=&style=flat-square>
 [docs-img-leptos]: <https://img.shields.io/docsrs/leptos?label=&style=flat-square>
 [docs-img-liquid]: <https://img.shields.io/docsrs/liquid?label=&style=flat-square>
 [docs-img-markup]: <https://img.shields.io/docsrs/markup?label=&style=flat-square>
@@ -116,6 +120,7 @@ Run `./generate-table.py` to generate the table you see above.
 [dl-handlebars]: <https://img.shields.io/crates/dr/handlebars?label=&color=f8f8f8&style=flat-square>
 [dl-horrorshow]: <https://img.shields.io/crates/dr/horrorshow?label=&color=f8f8f8&style=flat-square>
 [dl-hypertext]: <https://img.shields.io/crates/dr/hypertext?label=&color=f8f8f8&style=flat-square>
+[dl-hypo]: <https://img.shields.io/crates/dr/hypo?label=&color=f8f8f8&style=flat-square>
 [dl-leptos]: <https://img.shields.io/crates/dr/leptos?label=&color=f8f8f8&style=flat-square>
 [dl-liquid]: <https://img.shields.io/crates/dr/liquid?label=&color=f8f8f8&style=flat-square>
 [dl-markup]: <https://img.shields.io/crates/dr/markup?label=&color=f8f8f8&style=flat-square>
@@ -136,6 +141,7 @@ Run `./generate-table.py` to generate the table you see above.
 [stars-leptos]: <https://img.shields.io/github/stars/leptos-rs/leptos?label=&color=f8f8f8&style=flat-square>
 [stars-liquid]: <https://img.shields.io/github/stars/cobalt-org/liquid-rust?label=&color=f8f8f8&style=flat-square>
 [stars-hypertext]: <https://img.shields.io/github/stars/vidhanio/hypertext?label=&color=f8f8f8&style=flat-square>
+[stars-hypo]: <https://img.shields.io/github/stars/lsunsi/hypo?label=&color=f8f8f8&style=flat-square>
 [stars-markup]: <https://img.shields.io/github/stars/utkarshkukreti/markup.rs?label=&color=f8f8f8&style=flat-square>
 [stars-maud]: <https://img.shields.io/github/stars/lambda-fairy/maud?label=&color=f8f8f8&style=flat-square>
 [stars-minijinja]: <https://img.shields.io/github/stars/mitsuhiko/minijinja?label=&color=f8f8f8&style=flat-square>
@@ -152,6 +158,7 @@ Run `./generate-table.py` to generate the table you see above.
 [contr-handlebars]: <https://img.shields.io/github/contributors/sunng87/handlebars-rust?label=&color=f8f8f8&style=flat-square>
 [contr-horrorshow]: <https://img.shields.io/github/contributors/Stebalien/horrorshow-rs?label=&color=f8f8f8&style=flat-square>
 [contr-hypertext]: <https://img.shields.io/github/contributors/vidhanio/hypertext?label=&color=f8f8f8&style=flat-square>
+[contr-hypo]: <https://img.shields.io/github/contributors/lsunsi/hypo?label=&color=f8f8f8&style=flat-square>
 [contr-leptos]: <https://img.shields.io/github/contributors/leptos-rs/leptos?label=&color=f8f8f8&style=flat-square>
 [contr-liquid]: <https://img.shields.io/github/contributors/cobalt-org/liquid-rust?label=&color=f8f8f8&style=flat-square>
 [contr-markup]: <https://img.shields.io/github/contributors/utkarshkukreti/markup.rs?label=&color=f8f8f8&style=flat-square>
@@ -170,6 +177,7 @@ Run `./generate-table.py` to generate the table you see above.
 [act-handlebars]: <https://img.shields.io/github/commit-activity/y/sunng87/handlebars-rust?label=&color=f8f8f8&style=flat-square>
 [act-horrorshow]: <https://img.shields.io/github/commit-activity/y/Stebalien/horrorshow-rs?label=&color=f8f8f8&style=flat-square>
 [act-hypertext]: <https://img.shields.io/github/commit-activity/y/vidhanio/hypertext?label=&color=f8f8f8&style=flat-square>
+[act-hypo]: <https://img.shields.io/github/commit-activity/y/lsunsi/hypo?label=&color=f8f8f8&style=flat-square>
 [act-leptos]: <https://img.shields.io/github/commit-activity/y/leptos-rs/leptos?label=&color=f8f8f8&style=flat-square>
 [act-liquid]: <https://img.shields.io/github/commit-activity/y/cobalt-org/liquid-rust?label=&color=f8f8f8&style=flat-square>
 [act-markup]: <https://img.shields.io/github/commit-activity/y/utkarshkukreti/markup.rs?label=&color=f8f8f8&style=flat-square>
@@ -188,6 +196,7 @@ Run `./generate-table.py` to generate the table you see above.
 [repo-handlebars]: <https://github.com/sunng87/handlebars-rust>
 [repo-horrorshow]: <https://github.com/Stebalien/horrorshow-rs>
 [repo-hypertext]: <https://github.com/vidhanio/hypertext>
+[repo-hypo]: <https://github.com/lsunsi/hypo>
 [repo-leptos]: <https://github.com/leptos-rs/leptos>
 [repo-liquid]: <https://github.com/cobalt-org/liquid-rust>
 [repo-markup]: <https://github.com/utkarshkukreti/markup.rs>

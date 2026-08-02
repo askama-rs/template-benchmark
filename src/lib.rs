@@ -34,6 +34,8 @@ macro_rules! for_each {
             for_each!(horrorshow, group, $input:$Input, $func);
             #[cfg(feature = "hypertext")]
             for_each!(hypertext, group, $input:$Input, $func);
+            #[cfg(feature = "hypo")]
+            for_each!(hypo, group, $input:$Input, $func);
             #[cfg(feature = "markup")]
             for_each!(markup, group, $input:$Input, $func);
             #[cfg(feature = "maud")]
